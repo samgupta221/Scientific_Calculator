@@ -1,0 +1,279 @@
+/* Responsive */
+@media (max-width: 400px) {
+  .container {
+    width: 90vw;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body, html {
+  margin: 0; padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #dce3ed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 350px;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.top-controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.top-controls label {
+  cursor: pointer;
+}
+
+.calculator {
+  background: #2f4052;
+  border-radius: 18px;
+  box-shadow:
+    5px 5px 15px rgba(0,0,0,0.1),
+    inset 0 0 10px rgba(0,0,0,0.2);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.display {
+  background: #2a3748;
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 500;
+  height: 70px;
+  border-radius: 12px;
+  padding: 1rem 1.3rem;
+  text-align: right;
+  overflow-x: auto;
+  white-space: nowrap;
+  user-select: text;
+}
+
+.buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2px;
+}
+
+.buttons-grid button {
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  padding: 1rem 0;
+  background: #fff;
+  color: #222;
+  border-radius: 0;
+  user-select: none;
+  outline: none;
+}
+
+.memory-btn {
+  background: #b8c3cf;
+  color: #222;
+}
+
+.memory-btn:hover {
+  background: #9eaec0;
+}
+
+.sci-btn {
+  background: #779ecb;
+  color: white;
+}
+
+.sci-btn:hover {
+  background: #4e75bb;
+}
+
+.ctrl-btn {
+  background: #fff;
+  color: #222;
+}
+
+.ctrl-btn:hover {
+  background: #ddd;
+}
+
+.operator {
+  background: #42a1f5;
+  color: white;
+}
+
+.operator:hover {
+  background: #0c78d6;
+}
+
+.equals-btn {
+  background: #e14c4c;
+  color: white;
+  grid-column: span 2;
+  border-bottom-right-radius: 18px;
+  border-top-left-radius: 10px;
+  font-weight: bold;
+}
+
+.equals-btn:hover {
+  background: #bf3a3a;
+}
+
+#open-history {
+  background: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #555;
+  user-select: none;
+}
+
+#open-history:hover {
+  background: #eee;
+}
+
+
+.num-btn[data-num="0"] {
+  grid-column: span 1;
+}
+
+.num-btn[data-num="."] {
+  grid-column: span 1;
+}
+
+.history-panel {
+  background: #f7f7f7;
+  border-radius: 12px;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 0.7rem 1rem;
+  display: none;
+  flex-direction: column;
+}
+
+.history-panel h3 {
+  margin: 0 0 0.4rem 0;
+  font-weight: 600;
+}
+
+.history-panel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.history-panel ul li {
+  padding: 0.3rem 0.5rem;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  font-family: monospace;
+  color: #333;
+}
+
+.history-panel ul li:hover {
+  background: #eee;
+}
+
+#clearHistory {
+  margin-top: 0.5rem;
+  background: #d9534f;
+  color: white;
+  border: none;
+  padding: 0.4rem 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  user-select: none;
+}
+
+#clearHistory:hover {
+  background: #c9302c;
+}
+
+/* Light Mode */
+body.light {
+  background: #f2f2f2;
+}
+
+body.light .calculator {
+  background: #fff;
+  box-shadow:
+    5px 5px 15px rgba(0,0,0,0.15),
+    inset 0 0 10px rgba(0,0,0,0.1);
+}
+
+body.light .display {
+  background: #eaeaea;
+  color: #222;
+}
+
+body.light .memory-btn {
+  background: #d6dce3;
+  color: #222;
+}
+
+body.light .memory-btn:hover {
+  background: #bcc5ce;
+}
+
+body.light .sci-btn {
+  background: #8aa7d0;
+  color: #222;
+}
+
+body.light .sci-btn:hover {
+  background: #607dbb;
+}
+
+body.light .ctrl-btn {
+  background: #fff;
+  color: #222;
+}
+
+body.light .ctrl-btn:hover {
+  background: #ddd;
+}
+
+body.light .operator {
+  background: #4ea1f5;
+  color: white;
+}
+
+body.light .operator:hover {
+  background: #2169d6;
+}
+
+body.light .equals-btn {
+  background: #f05b5b;
+}
+
+body.light .equals-btn:hover {
+  background: #c93a3a;
+}
+
+body.light #open-history {
+  background: #fff;
+  color: #555;
+}
+
+body.light #open-history:hover {
+  background: #eee;
+}
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="top-controls">
+      <label><input type="checkbox" id="themeToggle" /> Light Mode</label>
+      <label><input type="checkbox" id="angleToggle" checked /> Degrees</label>
+    </div>
+
+    <div class="calculator">
+      <div class="display" id="display">0</div>
+      <div class="buttons-grid">
+     
+        <button class="memory-btn" id="mc">MC</button>
+        <button class="memory-btn" id="mr">MR</button>
+        <button class="memory-btn" id="mplus">M+</button>
+        <button class="memory-btn" id="mminus">M-</button>
+
+        
+        <button class="sci-btn" data-func="sin">sin</button>
+        <button class="sci-btn" data-func="cos">cos</button>
+        <button class="sci-btn" data-func="tan">tan</button>
+        <button class="sci-btn" data-func="log">log</button>
+
+        <button class="ctrl-btn" id="clear">AC</button>
+        <button class="ctrl-btn" id="delete">DEL</button>
+        <button class="operator" data-op="/">÷</button>
+        <button class="operator" data-op="*">×</button>
+
+        <button class="num-btn" data-num="7">7</button>
+        <button class="num-btn" data-num="8">8</button>
+        <button class="num-btn" data-num="9">9</button>
+        <button class="operator" data-op="-">−</button>
+
+        <button class="num-btn" data-num="4">4</button>
+        <button class="num-btn" data-num="5">5</button>
+        <button class="num-btn" data-num="6">6</button>
+        <button class="operator" data-op="+">+</button>
+
+        <button class="num-btn" data-num="1">1</button>
+        <button class="num-btn" data-num="2">2</button>
+        <button class="num-btn" data-num="3">3</button>
+        <button id="open-history">≡</button>
+
+        <button class="num-btn" data-num="0">0</button>
+        <button class="num-btn" data-num=".">.</button>
+        <button class="equals-btn" id="equals">=</button>
+      </div>
+    </div>
+
+    <div class="history-panel" id="historyPanel">
+      <h3>History</h3>
+      <ul id="historyList"></ul>
+      <button id="clearHistory">Clear History</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
