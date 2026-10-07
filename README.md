@@ -63,44 +63,6 @@ Scientific_Calculator/
 └── screenshot.png
 ```
 
-## How to Run the Project
-
-### Method 1: Run Directly
-
-1. Download or clone the repository.
-2. Open the project folder.
-3. Double-click `index.html`.
-4. The calculator will open in your browser.
-
-### Method 2: Clone Using Git
-
-```bash
-git clone https://github.com/samgupta221/Scientific_Calculator.git
-```
-
-Navigate to the project:
-
-```bash
-cd Scientific_Calculator
-```
-
-Open `index.html` in your browser.
-
-No external libraries or package installation are required.
-
-## Usage
-
-### Basic Calculations
-
-Example:
-
-```text
-10 + 5 = 15
-20 - 8 = 12
-6 × 7 = 42
-50 ÷ 5 = 10
-```
-
 ### Scientific Calculations
 
 The calculator supports trigonometric and logarithmic operations.
@@ -161,26 +123,6 @@ It contains:
 - Light mode
 - Delete and clear controls
 
-## Screenshot
-
-![Scientific Calculator](screenshot.png)
-
-## Application Flow
-
-```text
-User Input
-    ↓
-Button/Event Handler
-    ↓
-JavaScript Calculator Logic
-    ↓
-Mathematical Operation
-    ↓
-Result
-    ↓
-Display on Calculator
-```
-
 ## Key JavaScript Concepts Used
 
 This project demonstrates several important JavaScript concepts:
@@ -199,35 +141,4 @@ This project demonstrates several important JavaScript concepts:
 ## Responsive Design
 
 The calculator layout is designed to work across different screen sizes and provides a clean interface for desktop and smaller-screen devices.
-
-## Future Improvements
-
-The project can be enhanced with additional features such as:
-
-- Dark mode
-- Calculation history
-- Keyboard support
-- Square root (√)
-- Power/exponent (x², xʸ)
-- Percentage (%)
-- Factorial (!)
-- Parentheses support
-- π and e constants
-- Inverse trigonometric functions
-- Advanced scientific functions
-- Improved mobile responsiveness
-- Copy result functionality
-
-## Learning Outcomes
-
-Through this project, I gained practical experience with:
-
-- Creating interactive web applications
-- Manipulating HTML elements using JavaScript
-- Handling user interactions and button events
-- Implementing mathematical calculations
-- Designing responsive interfaces using CSS
-- Managing application state
-- Using JavaScript's built-in mathematical functions
-
 
