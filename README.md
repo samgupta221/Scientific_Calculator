@@ -51,18 +51,7 @@ It includes a simple and intuitive interface with dedicated buttons for arithmet
 - **JavaScript (ES6)** – Calculator functionality and logic
 - **JavaScript Math API** – Mathematical and scientific calculations
 
-## Project Structure
-
-```text
-Scientific_Calculator/
-│
-├── index.html
-├── index.js
-├── style.css
-├── README.md
-└── screenshot.png
-```
-
+  
 ### Scientific Calculations
 
 The calculator supports trigonometric and logarithmic operations.
